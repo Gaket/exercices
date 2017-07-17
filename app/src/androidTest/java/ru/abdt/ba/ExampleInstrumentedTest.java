@@ -1,4 +1,4 @@
-package ru.abdt.badoo;
+package ru.abdt.ba;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

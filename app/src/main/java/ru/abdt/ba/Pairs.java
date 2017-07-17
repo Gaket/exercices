@@ -1,4 +1,4 @@
-package ru.abdt.badoo;
+package ru.abdt.ba;
 
 import android.support.annotation.NonNull;
 

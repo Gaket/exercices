@@ -1,4 +1,4 @@
-package ru.abdt.badoo;
+package ru.abdt.ba;
 
 import java.util.ArrayList;
 import java.util.Collection;
