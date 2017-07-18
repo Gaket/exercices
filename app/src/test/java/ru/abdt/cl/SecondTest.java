@@ -63,4 +63,14 @@ public class SecondTest {
     public void name9() throws Exception {
         Assert.assertEquals(0, second.solution(0, new int[]{2147483647, 2147483647}));
     }
+
+    @Test
+    public void name10() throws Exception {
+        Assert.assertEquals(0, second.solution(0, new int[]{1}));
+    }
+
+    @Test
+    public void name11() throws Exception {
+        Assert.assertEquals(0, second.solution(1, new int[]{1}));
+    }
 }

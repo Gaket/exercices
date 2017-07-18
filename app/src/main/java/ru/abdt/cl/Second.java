@@ -17,17 +17,20 @@ public class Second {
 
         int kComplementaryCount = 0;
 
-        for (Map.Entry<Integer, Integer> integerIntegerEntry : occurencies.entrySet()) {
-            long diff = K - integerIntegerEntry.getKey();
+        for (Map.Entry<Integer, Integer> numAndCount : occurencies.entrySet()) {
+            if (numAndCount.getKey().equals(-2_147_483_648)) {
+                // skip Integer.MIN_VALUE, because it definitely can't have the pair in this task
+                continue;
+            }
+            int diff = K - numAndCount.getKey();
             if (occurencies.containsKey(diff)) {
-                    kComplementaryCount += integerIntegerEntry.getValue() *  occurencies.get(diff);
+                    kComplementaryCount += numAndCount.getValue() *  occurencies.get(diff);
             }
         }
 
         return kComplementaryCount;
     }
 
-    @NonNull
     private Map<Integer, Integer> getOccurenciesMap(int[] A) {
         Map<Integer, Integer> numbers = new HashMap<>();
         for (Integer i : A) {

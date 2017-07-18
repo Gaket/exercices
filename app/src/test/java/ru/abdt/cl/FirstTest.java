@@ -39,8 +39,20 @@ public class FirstTest {
     }
 
     @Test
+    public void name6() throws Exception {
+        int[] ar = new int[]{2, 3, -1, 1, -5};
+        Assert.assertEquals(4, first.solution(ar));
+    }
+
+    @Test
     public void name4() throws Exception {
         int[] ar = new int[]{-3222, 3, -1, 1, -3};
+        Assert.assertEquals(1, first.solution(ar));
+    }
+
+    @Test
+    public void name5() throws Exception {
+        int[] ar = new int[]{10, 3, -1, 1, -3};
         Assert.assertEquals(1, first.solution(ar));
     }
 }
